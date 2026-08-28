@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build / audit artifacts
+lighthouse*.json
+127.0.0.1_*.json
+
+# Scratch files
+assets/images/Untitled

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyre | High-Performance Digital Engineering</title>
+  <meta name="description" content="Pyre Studio — engenharia digital de alta performance. Websites, web apps e experiências premium forjadas com precisão.">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="page">
+
+<header class="site-header glass">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">
+      <img alt="" class="site-header__logo" src="assets/images/logo.svg" width="20" height="36" aria-hidden="true">
+      <span class="site-header__brand-text">
+        <span class="site-header__name">Pyre</span>
+        <span class="site-header__tagline">Studio</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a class="nav__link nav__link--active" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Serviços</a>
+      <a class="nav__link" href="portfolio.html">Portfólio</a>
+      <a class="nav__link" href="aboutUs.html">Sobre</a>
+      <a class="nav__link" href="contacts.html">Contacto</a>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="contacts.html">Forjar Projeto</a>
+    <button class="nav__toggle hidden-desktop" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <img class="ui-icon nav__toggle-icon nav__toggle-icon--open" src="assets/icons/ui/menu.svg" alt="" aria-hidden="true" width="24" height="24">
+      <img class="ui-icon nav__toggle-icon nav__toggle-icon--close" src="assets/icons/ui/close.svg" alt="" aria-hidden="true" width="24" height="24">
+    </button>
+  </div>
+  <nav class="nav-mobile" id="site-nav" aria-label="Navegação móvel" hidden>
+    <a class="nav-mobile__link nav-mobile__link--active" href="index.html">Home</a>
+    <a class="nav-mobile__link" href="services.html">Serviços</a>
+    <a class="nav-mobile__link" href="portfolio.html">Portfólio</a>
+    <a class="nav-mobile__link" href="aboutUs.html">Sobre</a>
+    <a class="nav-mobile__link" href="contacts.html">Contacto</a>
+    <a class="btn btn--primary btn--full nav-mobile__cta" href="contacts.html">Forjar Projeto</a>
+  </nav>
+</header>
+
+<main class="page__main relative">
+  <div class="hero-glow--page glow-bg-subtle"></div>
+
+  <!-- Hero -->
+  <section class="section container hero z-10">
+    <div class="chips-row">
+      <span class="chip">
+        <span class="chip__dot"></span>
+        99.9% Performance
+      </span>
+      <span class="chip">Premium Quality</span>
+      <span class="chip">Design Driven</span>
+    </div>
+    <h1 class="heading-display glow-text max-w-narrow mx-auto mb-md">
+      A faísca que transforma a sua presença digital
+    </h1>
+    <p class="text-lg text-muted max-w-prose mx-auto mb-xl">
+      Engineering high-performance digital experiences that ignite growth and redefine limits.
+    </p>
+    <a class="btn btn--primary btn--primary-lg mb-section" href="contacts.html">
+      Começar Agora
+      <img class="ui-icon icon-arrow" src="assets/icons/ui/arrow_forward.svg" alt="" aria-hidden="true" width="16" height="16">
+    </a>
+    <div class="social-proof mx-auto">
+      <p class="label label--widest text-muted mb-lg">Tecnologias de Alta Performance</p>
+      <div class="social-proof__logos">
+        <img alt="React" class="social-proof__logo" src="assets/logos/react.svg">
+        <img alt="Next.js" class="social-proof__logo" src="assets/logos/nextjs.svg">
+        <img alt="Figma" class="social-proof__logo" src="assets/logos/figma.svg">
+        <img alt="TypeScript" class="social-proof__logo" src="assets/logos/typescript.svg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Obstáculos -->
+  <section class="section container z-10">
+    <div class="section__header">
+      <h2 class="heading-xl">Obstáculos Digitais</h2>
+    </div>
+    <div class="grid grid--3 grid--gap-sm">
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature" src="assets/icons/ui/hourglass_empty.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">Velocidade Lenta</h3>
+        <p class="text-md text-muted">Slow load times kill business. Every second of delay reduces conversion and frustrates users.</p>
+      </article>
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature" src="assets/icons/ui/design_services.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">Design Fraco</h3>
+        <p class="text-md text-muted">Lack of authority and trust. Poor aesthetics damage brand perception instantly.</p>
+      </article>
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature" src="assets/icons/ui/trending_down.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">Baixa Conversão</h3>
+        <p class="text-md text-muted">Lost opportunities. When digital experiences fail, potential clients walk away.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Framework -->
+  <section class="section container z-10">
+    <div class="split">
+      <div class="split__half">
+        <h2 class="heading-xl mb-lg">O Framework Pyre</h2>
+        <p class="text-lg text-muted mb-md">
+          Precision engineering meets high performance and bespoke design.
+        </p>
+        <p class="text-md text-muted">
+          Our approach merges state-of-the-art architecture with luxurious aesthetics, ensuring your digital presence not only functions flawlessly but commands authority.
+        </p>
+      </div>
+      <div class="split__half flex justify-center">
+        <div class="terminal-wrap w-full">
+          <div class="terminal-wrap__hover"></div>
+          <div class="terminal-wrap__glow"></div>
+          <div class="terminal__window">
+            <div class="terminal__header">
+              <div class="terminal__dots">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+              </div>
+              <div class="terminal__title">pyre-framework — zsh</div>
+            </div>
+            <div class="terminal__body">
+              <div class="terminal__line">
+                <span class="terminal__line-num">1</span>
+                <span class="terminal__keyword"><span class="terminal__const">const</span> PyreFramework = {</span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">2</span>
+                <span class="terminal__muted">ignition: <span class="terminal__string">"Precision Discovery"</span>,</span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">3</span>
+                <span class="terminal__muted">composition: <span class="terminal__string">"Luxury UI + High-Perf Code"</span>,</span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">4</span>
+                <span class="terminal__muted">delivery: <span class="terminal__string">"Scalable Digital Assets"</span>,</span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">5</span>
+                <span class="terminal__muted">result: <span class="terminal__string">"Ignite Growth"</span></span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">6</span>
+                <span class="terminal__keyword">};</span>
+              </div>
+              <div class="terminal__line mt-lg">
+                <span class="terminal__line-num">7</span>
+                <span class="terminal__comment">// Redefining limits...</span>
+              </div>
+              <div class="terminal__line">
+                <span class="terminal__line-num">8</span>
+                <span class="terminal__keyword">PyreFramework.<span class="terminal__const">launch</span>();</span>
+              </div>
+              <div class="terminal__cursor">
+                <span class="terminal__keyword">$</span>
+                <span class="terminal__cursor-bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processo -->
+  <section class="section container z-10">
+    <div class="section__header">
+      <h2 class="heading-xl">O Nosso Processo</h2>
+    </div>
+    <div class="grid grid--4 grid--gap-sm grid--4-sm grid--badges">
+      <article class="card card--graphite process-card">
+        <span class="badge">1</span>
+        <h3 class="heading-lg process-card__title">A Faísca</h3>
+        <p class="text-md text-muted text-sm">Discovery &amp; Strategy</p>
+      </article>
+      <article class="card card--graphite process-card">
+        <span class="badge">2</span>
+        <h3 class="heading-lg process-card__title">A Chama</h3>
+        <p class="text-md text-muted text-sm">Design &amp; Identity</p>
+      </article>
+      <article class="card card--graphite process-card">
+        <span class="badge">3</span>
+        <h3 class="heading-lg process-card__title">A Luz</h3>
+        <p class="text-md text-muted text-sm">Development &amp; Engineering</p>
+      </article>
+      <article class="card card--graphite process-card">
+        <span class="badge">4</span>
+        <h3 class="heading-lg process-card__title">A Têmpera</h3>
+        <p class="text-md text-muted text-sm">Optimization &amp; Launch</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testemunhos -->
+  <section class="section container z-10">
+    <div class="section__header">
+      <h2 class="heading-xl">Vozes de Autoridade</h2>
+    </div>
+    <div class="grid grid--3 grid--gap-sm">
+      <blockquote class="card card--graphite card__padding flex flex-col">
+        <div class="star-rating">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+        </div>
+        <p class="text-md text-muted flex-grow mb-md">"An absolute game-changer. The performance and design quality exceeded all our expectations."</p>
+        <cite class="label">Client A</cite>
+      </blockquote>
+      <blockquote class="card card--graphite card__padding flex flex-col">
+        <div class="star-rating">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+        </div>
+        <p class="text-md text-muted flex-grow mb-md">"Unmatched precision and attention to detail. Pyre delivered exactly what we needed."</p>
+        <cite class="label">Client B</cite>
+      </blockquote>
+      <blockquote class="card card--graphite card__padding flex flex-col">
+        <div class="star-rating">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+          <img class="ui-icon icon-sm" src="assets/icons/ui/star.svg" alt="" aria-hidden="true" width="16" height="16">
+        </div>
+        <p class="text-md text-muted flex-grow mb-md">"They transformed our digital presence into a true powerhouse of conversion and authority."</p>
+        <cite class="label">Client C</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <div class="perf-line mb-section"></div>
+
+  <!-- Engenharia -->
+  <section class="section container z-10">
+    <h2 class="heading-xl mb-xl">Engenharia de Precisão</h2>
+    <div class="grid grid--bento grid--gap-sm">
+      <article class="card card--graphite card--tall card__padding grid__span-2 relative overflow-hidden">
+        <img class="ui-icon card__icon-deco card__icon-feature" src="assets/icons/ui/speed.svg" alt="" aria-hidden="true" width="48" height="48">
+        <div class="flex flex-col flex-grow">
+          <span class="chip chip--tag mb-md">Web App</span>
+          <h3 class="heading-lg mb-sm">Aplicações Reativas</h3>
+          <p class="text-md text-muted max-w-prose">Sistemas construídos com arquiteturas state-of-the-art garantindo tempos de resposta na ordem dos milissegundos.</p>
+        </div>
+      </article>
+      <article class="card card--graphite card--tall card__padding">
+        <div>
+          <span class="chip chip--tag mb-md">UI/UX</span>
+          <h3 class="heading-lg heading-lg--compact mb-sm">Luxo Tátil</h3>
+          <p class="text-md text-muted">Design de interfaces que evocam emoção e autoridade.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Garantias -->
+  <section class="section container z-10">
+    <div class="grid grid--3 grid--gap-sm">
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature glow-text" src="assets/icons/ui/speed.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">100/100 Lighthouse</h3>
+        <p class="text-md text-muted">Fast loading speed guarantee.</p>
+      </article>
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature glow-text" src="assets/icons/ui/code.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">100% Bespoke</h3>
+        <p class="text-md text-muted">Zero heavy templates, pure custom React/Next.js code.</p>
+      </article>
+      <article class="card card--graphite card--center card__padding">
+        <img class="ui-icon card__icon-feature glow-text" src="assets/icons/ui/trending_up.svg" alt="" aria-hidden="true" width="24" height="24">
+        <h3 class="heading-lg mb-sm">SEO &amp; Growth</h3>
+        <p class="text-md text-muted">Built for search engine visibility.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Objeções -->
+  <section class="section container z-10">
+    <div class="grid grid--2 grid--gap-sm">
+      <article class="card card--graphite card--medium card__padding">
+        <h3 class="heading-lg mb-sm">Prazos Claros</h3>
+        <p class="text-md text-muted">Transparência total no cronograma do projeto, sem surpresas.</p>
+      </article>
+      <article class="card card--graphite card--medium card__padding">
+        <h3 class="heading-lg mb-sm">Suporte Pós-Lançamento Dedicado</h3>
+        <p class="text-md text-muted">Acompanhamento dedicado e manutenção contínua da sua plataforma.</p>
+      </article>
+      <article class="card card--graphite card--medium card__padding grid__span-2">
+        <h3 class="heading-lg mb-sm">Propriedade Total do Código</h3>
+        <p class="text-md text-muted max-w-prose">Todo o código e assets desenvolvidos são 100% seus após a conclusão do projeto.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section container z-10">
+    <div class="section__header">
+      <h2 class="heading-xl">Perguntas Frequentes</h2>
+    </div>
+    <div class="accordion container container--narrow">
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Quanto tempo demora um projeto?
+          <img class="ui-icon accordion__icon" src="assets/icons/ui/expand_more.svg" alt="" aria-hidden="true" width="24" height="24">
+        </summary>
+        <div class="accordion__content">
+          O tempo de desenvolvimento varia de acordo com a complexidade, mas tipicamente um projeto leva entre 4 a 8 semanas, desde a conceção ao lançamento.
+        </div>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          O design é personalizado?
+          <img class="ui-icon accordion__icon" src="assets/icons/ui/expand_more.svg" alt="" aria-hidden="true" width="24" height="24">
+        </summary>
+        <div class="accordion__content">
+          Sim. Cada pixel é desenhado à medida das necessidades da sua marca, garantindo uma presença digital única e com máxima autoridade.
+        </div>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">
+          Oferecem manutenção pós-lançamento?
+          <img class="ui-icon accordion__icon" src="assets/icons/ui/expand_more.svg" alt="" aria-hidden="true" width="24" height="24">
+        </summary>
+        <div class="accordion__content">
+          Absolutamente. Providenciamos planos de manutenção e otimização contínua para garantir que a sua plataforma opera sempre com máxima performance.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="section z-10">
+    <div class="cta-banner container">
+      <div class="cta-banner__glow-wrap">
+        <div class="hero-glow--cta"></div>
+      </div>
+      <div class="cta-banner__content">
+        <h2 class="heading-xl cta-banner__title">Pronto para acender a sua marca?</h2>
+        <a class="btn btn--primary btn--primary-lg" href="contacts.html">Entrar em Contacto</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo-link" href="index.html">
+        <img alt="" class="site-footer__logo" src="assets/images/logo.svg" width="25" height="44" aria-hidden="true">
+        <span class="site-footer__brand-text">
+          <span class="site-header__name">Pyre</span>
+          <span class="site-header__tagline">Studio</span>
+        </span>
+      </a>
+      <p class="text-md text-muted">© 2024 Pyre.<br>High-Performance Digital Engineering.</p>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Navegação</p>
+      <a class="site-footer__link" href="index.html">Home</a>
+      <a class="site-footer__link" href="services.html">Serviços</a>
+      <a class="site-footer__link" href="portfolio.html">Portfólio</a>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Legal &amp; Empresa</p>
+      <a class="site-footer__link" href="aboutUs.html">Sobre</a>
+      <a class="site-footer__link" href="contacts.html">Contacto</a>
+      <a class="site-footer__link" href="#">Termos</a>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Contacto</p>
+      <a class="site-footer__link" href="mailto:geral@pyre.studio">geral@pyre.studio</a>
+      <div class="site-footer__socials">
+        <a href="https://www.instagram.com/pyre.studio" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/instagram.svg" alt=""></a>
+        <a href="https://www.facebook.com/pyre.studio" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/facebook.svg" alt=""></a>
+        <a href="https://www.tiktok.com/@pyre.studio" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/tiktok.svg" alt=""></a>
+        <a href="https://www.linkedin.com/company/pyre-studio" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/linkedin.svg" alt=""></a>
+        <a href="https://github.com/pyre-studio" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/github.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js" defer></script>
+</body>
+</html>

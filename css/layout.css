@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Pyre Studio — Layout
+   ========================================================================== */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page__main {
+  flex: 1;
+  display: flow-root;
+  padding-top: calc(var(--header-height) + 3rem);
+}
+
+.page__main--compact {
+  padding-top: var(--header-height);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--margin-desktop);
+  }
+
+  .container--narrow {
+    max-width: 48rem;
+  }
+}
+
+.section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: var(--space-section);
+}
+
+.section--padding {
+  padding-block: var(--space-section);
+}
+
+.section--center {
+  text-align: center;
+}
+
+.section--head {
+  margin-bottom: 3rem;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__title {
+  margin-bottom: 1rem;
+}
+
+/* --- Grids --- */
+
+.grid {
+  display: grid;
+  gap: var(--space-gutter);
+}
+
+.grid--gap-sm { gap: 1rem; }
+.grid--gap-lg { gap: 2rem; }
+.grid--gap-xl { gap: 4rem; }
+
+.grid--2,
+.grid--3,
+.grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid--2-sm { grid-template-columns: repeat(2, 1fr); }
+  .grid--4-sm { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+.grid__span-2 {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .grid__span-2 { grid-column: span 2; }
+}
+
+/* --- Flex helpers (layout-level only) --- */
+
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.flex-grow { flex: 1; }
+
+.grid--3 > .service-card,
+.grid--3 > .card,
+.grid--4 > .card,
+.grid--4 > .process-card,
+.grid--2 > .team-card,
+.grid--2 > .project-card {
+  height: 100%;
+}
+
+.grid--3 > .service-card,
+.grid--3 > .card {
+  height: 100%;
+}
+.gap-sm { gap: 0.5rem; }
+.gap-md { gap: 1rem; }
+.gap-lg { gap: 1.5rem; }
+.gap-xl { gap: 2rem; }
+.gap-gutter { gap: var(--space-gutter); }
+
+/* --- Two-column split --- */
+
+.split {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .split {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .split__half {
+    width: 50%;
+  }
+}
+
+.split__half {
+  width: 100%;
+}
+
+/* --- Stack spacing --- */
+
+.stack-sm > * + * { margin-top: 0.5rem; }
+.stack-md > * + * { margin-top: 1rem; }
+.stack-lg > * + * { margin-top: 1.5rem; }
+.stack-xl > * + * { margin-top: 2rem; }
+
+/* --- Hero --- */
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.hero--full {
+  min-height: 80vh;
+  justify-content: center;
+  padding-top: 0;
+  padding-block: var(--space-section);
+}
+
+.hero__subtitle {
+  max-width: 42rem;
+  margin-bottom: 3rem;
+}
+
+.hero__actions {
+  margin-bottom: 6rem;
+}
+
+/* --- Masonry offset (portfolio) --- */
+
+@media (min-width: 768px) {
+  .masonry > *:nth-child(even) {
+    margin-top: 3rem;
+  }
+}
+
+/* --- Relative positioning --- */
+
+.relative { position: relative; }
+.z-10 { z-index: 10; }

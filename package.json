@@ -1,0 +1,9 @@
+{
+  "name": "pyre-studio",
+  "private": true,
+  "scripts": {
+    "build:css": "node scripts/build-css.js",
+    "build": "npm run build:css",
+    "audit:css": "node scripts/audit-css.js"
+  }
+}

@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Pyre Studio — Design Tokens (Fase 0)
+   Fonte única de verdade para cores, tipografia, espaçamento e efeitos.
+   ========================================================================== */
+
+:root {
+  /* --- Cores base --- */
+  --color-bg: #0A0A0C;
+  --color-bg-elevated: #121216;
+  --color-bg-surface: #131315;
+  --color-bg-surface-lowest: #0e0e10;
+  --color-bg-surface-low: #1c1b1d;
+  --color-bg-surface-container: #201f21;
+  --color-bg-surface-high: #2a2a2c;
+  --color-bg-surface-highest: #353437;
+  --color-bg-surface-variant: #353437;
+  --color-bg-surface-bright: #39393b;
+  --color-bg-surface-dim: #131315;
+
+  /* --- Bordas --- */
+  --color-border: #1C1C21;
+  --color-border-outline: #a38c7c;
+  --color-border-muted: #554336;
+
+  /* --- Texto --- */
+  --color-text: #e5e1e4;
+  --color-text-muted: #dbc2b0;
+  --color-text-on-primary: #4d2600;
+
+  /* --- Marca / Copper --- */
+  --color-primary: #ffb77d;
+  --color-primary-container: #d97707;
+  --color-copper: #D97706;
+  --color-copper-bright: #FF5500;
+  --color-secondary: #ffb95f;
+  --color-secondary-container: #ee9800;
+  --color-tertiary: #ffb694;
+  --color-error: #ffb4ab;
+
+  /* --- Tipografia --- */
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Geist', monospace;
+  --font-mono: 'Space Mono', monospace;
+
+  /* --- Escala tipográfica --- */
+  --text-display-lg: clamp(2.5rem, 5vw, 4.5rem);
+  --text-headline-xl: clamp(2rem, 3vw, 3rem);
+  --text-headline-lg: 2rem;
+  --text-body-lg: 1.125rem;
+  --text-body-md: 1rem;
+  --text-label-sm: 0.75rem;
+
+  --lh-display: 1.1;
+  --lh-headline-xl: 1.2;
+  --lh-headline-lg: 1.3;
+  --lh-body: 1.6;
+  --lh-label: 1;
+
+  --ls-display: -0.04em;
+  --ls-headline-xl: -0.02em;
+  --ls-label: 0.1em;
+  --ls-widest: 0.1em;
+
+  /* --- Espaçamento --- */
+  --space-unit: 8px;
+  --space-gutter: 24px;
+  --space-section: 120px;
+  --margin-mobile: 20px;
+  --margin-desktop: 80px;
+  --container-max: 1200px;
+  --header-height: 80px;
+
+  /* --- Radius --- */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* --- Sombras & glow --- */
+  --shadow-nav: 0 0 20px rgba(217, 119, 6, 0.1);
+  --shadow-copper: 0 0 15px rgba(217, 119, 6, 0.4);
+  --shadow-copper-strong: 0 0 20px rgba(255, 85, 0, 0.8);
+  --shadow-copper-soft: 0 0 20px rgba(217, 119, 7, 0.2);
+  --glow-text: 0 0 20px rgba(217, 119, 6, 0.4);
+  --glow-text-sm: 0 0 10px rgba(217, 119, 6, 0.5);
+  --glow-hover: 0 0 10px rgba(255, 183, 125, 0.5);
+
+  /* --- Transições --- */
+  --transition-base: 0.3s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s ease;
+
+  /* --- Opacidades semânticas --- */
+  --opacity-border-subtle: 0.2;
+  --opacity-border-faint: 0.1;
+  --opacity-muted: 0.6;
+  --opacity-glass: 0.8;
+}

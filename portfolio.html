@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Pyre</title>
+  <meta name="description" content="Galeria de projetos Pyre Studio — websites e web apps de alta performance com métricas reais de conversão e velocidade.">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/montserrat-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="page">
+
+<header class="site-header glass">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="index.html">
+      <img alt="" class="site-header__logo" src="assets/images/logo.svg" width="20" height="36" aria-hidden="true">
+      <span class="site-header__brand-text">
+        <span class="site-header__name">Pyre</span>
+        <span class="site-header__tagline">Studio</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="services.html">Serviços</a>
+      <a class="nav__link nav__link--active" href="portfolio.html">Portfólio</a>
+      <a class="nav__link" href="aboutUs.html">Sobre</a>
+      <a class="nav__link" href="contacts.html">Contacto</a>
+    </nav>
+    <a class="btn btn--primary nav__cta" href="contacts.html">Forjar Projeto</a>
+    <button class="nav__toggle hidden-desktop" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <img class="ui-icon nav__toggle-icon nav__toggle-icon--open" src="assets/icons/ui/menu.svg" alt="" aria-hidden="true" width="24" height="24">
+      <img class="ui-icon nav__toggle-icon nav__toggle-icon--close" src="assets/icons/ui/close.svg" alt="" aria-hidden="true" width="24" height="24">
+    </button>
+  </div>
+  <nav class="nav-mobile" id="site-nav" aria-label="Navegação móvel" hidden>
+    <a class="nav-mobile__link" href="index.html">Home</a>
+    <a class="nav-mobile__link" href="services.html">Serviços</a>
+    <a class="nav-mobile__link nav-mobile__link--active" href="portfolio.html">Portfólio</a>
+    <a class="nav-mobile__link" href="aboutUs.html">Sobre</a>
+    <a class="nav-mobile__link" href="contacts.html">Contacto</a>
+    <a class="btn btn--primary btn--full nav-mobile__cta" href="contacts.html">Forjar Projeto</a>
+  </nav>
+</header>
+
+<main class="page__main relative">
+  <div class="hero-glow--page glow-bg-subtle"></div>
+
+  <div class="container z-10 relative">
+    <section class="section section--center hero section--head">
+      <h1 class="heading-display heading-display--primary glow-text mb-md">Galeria de Chamas</h1>
+      <p class="text-lg text-muted max-w-prose mx-auto">
+        Projetos de alta performance forjados com precisão e código limpo.
+      </p>
+      <div class="filter-bar" role="group" aria-label="Filtrar projetos" data-portfolio-filter>
+        <button type="button" class="filter-btn filter-btn--active" data-filter="all" aria-pressed="true">Todos</button>
+        <button type="button" class="filter-btn" data-filter="landing" aria-pressed="false">Landing Pages</button>
+        <button type="button" class="filter-btn" data-filter="institutional" aria-pressed="false">Sites Institucionais</button>
+        <button type="button" class="filter-btn" data-filter="webapp" aria-pressed="false">Web Apps</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="portfolio-empty text-md text-muted text-center" id="portfolio-empty" hidden>Nenhum projeto nesta categoria.</p>
+      <div class="grid grid--2 masonry" id="portfolio-grid">
+        <article class="project-card" data-category="landing">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__image-wrap">
+            <img class="project-card__image" src="assets/images/portfolio-ignition.jpg" alt="Mockup da landing page Ignition Ecommerce em laptop, estética dark com acentos copper" loading="lazy" decoding="async" width="800" height="600">
+            <div class="project-card__metric">
+              <img class="metric-icon" src="assets/icons/bolt.svg" alt="" aria-hidden="true">
+              0.4s Tempo de Carregamento
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Landing Page</span>
+            <h3 class="heading-lg mb-sm">Ignition Ecommerce</h3>
+            <div class="project-card__tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Framer Motion</span>
+            </div>
+            <button type="button" class="btn btn--primary btn--full mt-auto" data-modal-open="project-modal">
+              Ver Projeto
+              <img class="ui-icon icon-arrow" src="assets/icons/ui/arrow_forward.svg" alt="" aria-hidden="true" width="16" height="16">
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="webapp">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__image-wrap project-card__image-wrap--tall">
+            <img class="project-card__image" src="assets/images/portfolio-obsidian.jpg" alt="Dashboard Obsidian em monitores duplos com visualizações de dados em ambiente high-tech" loading="lazy" decoding="async" width="800" height="600">
+            <div class="project-card__metric">
+              <img class="metric-icon" src="assets/icons/trending-up.svg" alt="" aria-hidden="true">
+              +120% Conversão
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Web App</span>
+            <h3 class="heading-lg mb-sm">Obsidian Dashboard</h3>
+            <div class="project-card__tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Recharts</span>
+            </div>
+            <button type="button" class="btn btn--primary btn--full mt-auto" data-modal-open="project-modal">
+              Ver Projeto
+              <img class="ui-icon icon-arrow" src="assets/icons/ui/arrow_forward.svg" alt="" aria-hidden="true" width="16" height="16">
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="institutional">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__image-wrap project-card__image-wrap--tall">
+            <img class="project-card__image" src="assets/images/portfolio-ember.jpg" alt="Homepage Ember Corporate em tablet sobre mármore preto, layout institucional premium" loading="lazy" decoding="async" width="800" height="600">
+            <div class="project-card__metric">
+              <img class="metric-icon" src="assets/icons/rocket.svg" alt="" aria-hidden="true">
+              99 Lighthouse
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Site Institucional</span>
+            <h3 class="heading-lg mb-sm">Ember Corporate</h3>
+            <div class="project-card__tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">GSAP</span>
+            </div>
+            <button type="button" class="btn btn--primary btn--full mt-auto" data-modal-open="project-modal">
+              Ver Projeto
+              <img class="ui-icon icon-arrow" src="assets/icons/ui/arrow_forward.svg" alt="" aria-hidden="true" width="16" height="16">
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="webapp">
+          <div class="project-card__overlay"></div>
+          <div class="project-card__image-wrap">
+            <img class="project-card__image" src="assets/images/portfolio-forge.jpg" alt="Interface conceptual Forge Portal com design glassmorphic e elementos copper metálicos" loading="lazy" decoding="async" width="800" height="600">
+            <div class="project-card__metric">
+              <img class="metric-icon" src="assets/icons/target.svg" alt="" aria-hidden="true">
+              45% Redução de Churn
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__tag">Web App</span>
+            <h3 class="heading-lg mb-sm">Forge Portal</h3>
+            <div class="project-card__tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Pinia</span>
+            </div>
+            <button type="button" class="btn btn--primary btn--full mt-auto" data-modal-open="project-modal">
+              Ver Projeto
+              <img class="ui-icon icon-arrow" src="assets/icons/ui/arrow_forward.svg" alt="" aria-hidden="true" width="16" height="16">
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <section class="section z-10">
+    <div class="cta-banner container">
+      <div class="cta-banner__content">
+        <h2 class="heading-xl cta-banner__title">Quer um resultado semelhante para a sua marca?</h2>
+        <a class="btn btn--primary btn--primary-lg" href="contacts.html">Iniciar o Seu Projeto</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="site-footer__logo-link" href="index.html">
+        <img alt="" class="site-footer__logo" src="assets/images/logo.svg" width="25" height="44" aria-hidden="true">
+        <span class="site-footer__brand-text">
+          <span class="site-header__name">Pyre</span>
+          <span class="site-header__tagline">Studio</span>
+        </span>
+      </a>
+      <p class="text-md text-muted">© 2024 Pyre.<br>High-Performance Digital Engineering.</p>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Navegação</p>
+      <a class="site-footer__link" href="index.html">Home</a>
+      <a class="site-footer__link" href="services.html">Serviços</a>
+      <a class="site-footer__link" href="portfolio.html">Portfólio</a>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Legal &amp; Empresa</p>
+      <a class="site-footer__link" href="aboutUs.html">Sobre</a>
+      <a class="site-footer__link" href="contacts.html">Contacto</a>
+      <a class="site-footer__link" href="#">Termos</a>
+    </div>
+    <div>
+      <p class="site-footer__column-title">Contacto</p>
+      <a class="site-footer__link" href="mailto:geral@pyre.studio">geral@pyre.studio</a>
+      <div class="site-footer__socials">
+        <a href="https://www.instagram.com/pyre.studio" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/instagram.svg" alt=""></a>
+        <a href="https://www.facebook.com/pyre.studio" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/facebook.svg" alt=""></a>
+        <a href="https://www.tiktok.com/@pyre.studio" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/tiktok.svg" alt=""></a>
+        <a href="https://www.linkedin.com/company/pyre-studio" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/linkedin.svg" alt=""></a>
+        <a href="https://github.com/pyre-studio" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/github.svg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <button class="modal__close" type="button" data-modal-close aria-label="Fechar">
+      <img class="ui-icon" src="assets/icons/ui/close.svg" alt="" aria-hidden="true" width="24" height="24">
+    </button>
+    <div class="modal__body">
+      <h2 class="heading-display heading-display--primary glow-text mb-xl text-center" id="modal-title">Ignition Ecommerce</h2>
+      <div class="card card--graphite-static overflow-hidden mb-xl">
+        <img class="w-full object-cover" alt="Project Hero Mockup" src="assets/images/portfolio-modal-hero.jpg" loading="lazy" decoding="async">
+      </div>
+      <div class="grid grid--2 grid--gap-xl mb-xl">
+        <div>
+          <h3 class="heading-lg mb-md">O Desafio</h3>
+          <p class="text-md text-muted">
+            Criar uma plataforma de e-commerce que não apenas funcionasse perfeitamente, mas que transmitisse uma aura de exclusividade e luxo. O cliente precisava de tempos de carregamento instantâneos e uma interface que convertesse visitantes em compradores fiéis, superando a concorrência saturada do mercado.
+          </p>
+        </div>
+        <div>
+          <h3 class="heading-lg mb-md">A Solução</h3>
+          <p class="text-md text-muted">
+            Desenvolvemos uma arquitetura headless utilizando Next.js, garantindo performance ultrarrápida. O design foi concebido com uma estética "dark luxury", empregando tons de obsidiana e cobre para guiar o olhar do usuário. Animações sutis com Framer Motion adicionam vida sem comprometer a velocidade.
+          </p>
+        </div>
+      </div>
+      <div class="mb-xl">
+        <h3 class="heading-lg mb-lg text-center">Galeria de Interface</h3>
+        <div class="grid grid--3 grid--gap-sm">
+          <div class="card card--graphite-static card--tall card--center card__padding">
+            <p class="text-md text-muted opacity-muted">[ Placeholder Desktop ]</p>
+          </div>
+          <div class="card card--graphite-static card--tall card--center card__padding">
+            <p class="text-md text-muted opacity-muted">[ Placeholder Mobile ]</p>
+          </div>
+          <div class="card card--graphite-static card--tall card--center card__padding">
+            <p class="text-md text-muted opacity-muted">[ Placeholder Components ]</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-lg">
+        <button type="button" class="btn btn--primary btn--primary-lg">
+          Visitar Website Live
+          <img class="ui-icon icon-arrow" src="assets/icons/ui/north_east.svg" alt="" aria-hidden="true" width="16" height="16">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/nav.js" defer></script>
+<script src="js/portfolio-filter.js" defer></script>
+<script src="js/modal.js" defer></script>
+</body>
+</html>

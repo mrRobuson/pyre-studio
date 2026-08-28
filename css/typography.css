@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Pyre Studio — Typography
+   ========================================================================== */
+
+.heading-display {
+  font-family: var(--font-display);
+  font-size: var(--text-display-lg);
+  font-weight: 700;
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  color: var(--color-text);
+}
+
+.heading-xl {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-xl);
+  font-weight: 600;
+  line-height: var(--lh-headline-xl);
+  letter-spacing: var(--ls-headline-xl);
+  color: var(--color-text);
+}
+
+.heading-lg {
+  font-family: var(--font-display);
+  font-size: var(--text-headline-lg);
+  font-weight: 600;
+  line-height: var(--lh-headline-lg);
+  color: var(--color-text);
+}
+
+.text-lg {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  line-height: var(--lh-body);
+}
+
+.text-md {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  font-weight: 400;
+  line-height: var(--lh-body);
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: var(--lh-body);
+}
+
+.label {
+  font-family: var(--font-label);
+  font-size: var(--text-label-sm);
+  font-weight: 500;
+  line-height: var(--lh-label);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+}
+
+.label--widest {
+  letter-spacing: var(--ls-widest);
+}
+
+.text-primary { color: var(--color-primary); }
+.text-copper { color: var(--color-copper); }
+.text-muted { color: var(--color-text-muted); }
+.text-on-surface { color: var(--color-text); }
+.text-secondary { color: var(--color-secondary); }
+
+.text-gradient-copper {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-copper));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.glow-text {
+  text-shadow: var(--glow-text);
+}
+
+.glow-sm {
+  text-shadow: var(--glow-text-sm);
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.tracking-tighter { letter-spacing: -0.02em; }
+
+.heading-display--primary { color: var(--color-primary); }
