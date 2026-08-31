@@ -10,7 +10,7 @@
 
   var PLANS = {
     faisca: 'Plano Faísca — a partir de 150.000 AOA',
-    chama: 'Plano Chama — a partir de 300.000 AOA',
+    chama: 'Plano Chama — a partir de 350.000 AOA',
     forja: 'Plano Forja — a partir de 700.000 AOA',
     undecided: 'Ainda não sei — preciso de orientação'
   };
