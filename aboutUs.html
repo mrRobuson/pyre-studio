@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Pyre</title>
+  <title>Sobre | Pyre</title>
   <meta name="description" content="Conheça a Pyre Studio — engenheiros digitais obcecados por performance, design premium e marcas que brilham no escuro.">
   <meta name="theme-color" content="#0A0A0C">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
   <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body class="page">
+<body class="page page--about">
 
 <header class="site-header glass">
   <div class="site-header__inner">
@@ -24,7 +24,7 @@
       </span>
     </a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="index.html">Início</a>
       <a class="nav__link" href="services.html">Serviços</a>
       <a class="nav__link" href="portfolio.html">Portfólio</a>
       <a class="nav__link nav__link--active" href="aboutUs.html">Sobre</a>
@@ -37,7 +37,7 @@
     </button>
   </div>
   <nav class="nav-mobile" id="site-nav" aria-label="Navegação móvel" hidden>
-    <a class="nav-mobile__link" href="index.html">Home</a>
+    <a class="nav-mobile__link" href="index.html">Início</a>
     <a class="nav-mobile__link" href="services.html">Serviços</a>
     <a class="nav-mobile__link" href="portfolio.html">Portfólio</a>
     <a class="nav-mobile__link nav-mobile__link--active" href="aboutUs.html">Sobre</a>
@@ -46,20 +46,18 @@
   </nav>
 </header>
 
-<main class="page__main page__main--compact relative">
+<main class="page__main relative">
 
   <!-- Hero Section -->
-  <section class="section container hero hero--full relative overflow-hidden z-10">
-    <div class="absolute inset-0 flex justify-center items-center pointer-events-none">
-      <div class="hero-glow hero-glow--about"></div>
-    </div>
+  <section class="section container hero hero--about section--center relative z-10">
+    <div class="hero-glow hero-glow--about" aria-hidden="true"></div>
     <div class="relative z-10 max-w-narrow mx-auto flex flex-col items-center">
       <img alt="Pyre Studio" class="hero-logo" src="assets/images/logo.svg" width="81" height="144">
       <h1 class="heading-display mb-md">
-        Nascidos da Necessidade de Destacar Brands no Escuro
+        Nascidos da Necessidade de Destacar Marcas no Escuro
       </h1>
       <p class="text-lg text-muted max-w-prose mx-auto">
-        We forge digital experiences that refuse to be ignored. Precision engineering meets raw, unbridled design power.
+        Forjamos experiências digitais que se recusam a passar despercebidas. Engenharia de precisão aliada a um design poderoso e sem compromissos.
       </p>
     </div>
   </section>
@@ -70,16 +68,16 @@
     <div class="container container--narrow">
       <div class="glass-panel card__padding-lg relative">
         <div class="manifesto-panel__accent"></div>
-        <h2 class="heading-xl text-primary mb-lg text-center">Pure Digital Energy</h2>
+        <h2 class="heading-xl text-primary mb-lg text-center">Energia Digital Pura</h2>
         <div class="stack-lg text-lg">
           <p>
-            In a sea of digital noise, mediocrity is invisible. Pyre was established on a singular, uncompromising principle: to engineer high-performance platforms that dominate their space.
+            Num mar de ruído digital, a mediocridade é invisível. A Pyre nasceu de um princípio singular e intransigente: engenhar plataformas de alta performance que dominam o seu espaço.
           </p>
           <p>
-            We do not build templates. We do not compromise on speed. Every line of code, every micro-interaction is deliberately crafted to project authority and instil confidence.
+            Não construímos templates. Não comprometemos a velocidade. Cada linha de código, cada micro-interacção é deliberadamente forjada para projectar autoridade e inspirar confiança.
           </p>
           <p class="text-secondary">
-            This is high-performance luxury. This is Pyre.
+            Isto é luxo de alta performance. Isto é Pyre.
           </p>
         </div>
       </div>
@@ -89,29 +87,29 @@
   <!-- Key Metrics & Proof Bar -->
   <section class="section stats-bar">
     <div class="container">
-      <div class="grid grid--4">
+      <div class="grid grid--4 stats-bar__grid">
         <div class="stat">
           <div class="stat__value">100%</div>
-          <div class="stat__label">Code Customization</div>
+          <div class="stat__label">Código Personalizado</div>
         </div>
         <div class="stat">
           <div class="stat__value">&lt; 1s</div>
-          <div class="stat__label">Avg Load Speed</div>
+          <div class="stat__label">Tempo Médio de Carregamento</div>
         </div>
         <div class="stat">
           <div class="stat__value">98+</div>
-          <div class="stat__label">Lighthouse Score</div>
+          <div class="stat__label">Pontuação Lighthouse</div>
         </div>
         <div class="stat">
           <div class="stat__value">24/7</div>
-          <div class="stat__label">Client Support</div>
+          <div class="stat__label">Suporte ao Cliente</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Engineering Philosophy Section -->
-  <section class="section container relative overflow-hidden">
+  <section class="section container relative">
     <div class="split">
       <div class="split__half stack-xl">
         <h2 class="heading-xl">Porquê Código Nativo e Não Templates?</h2>
@@ -184,16 +182,16 @@
 
   <!-- Team Section -->
   <section class="section container">
-    <h2 class="heading-lg mb-xl text-center">Nossa Equipa</h2>
+    <h2 class="heading-lg mb-xl text-center">A Nossa Equipa</h2>
     <div class="grid grid--2">
       <article class="team-card copper-gradient-hover glow-copper-hover">
         <div class="team-card__image-wrap">
-          <img alt="Marcus Thorne - Lead Architect" class="team-card__image" src="assets/images/team-marcus.jpg" loading="lazy" decoding="async">
+          <img alt="Marcus Thorne — Arquitecto Principal" class="team-card__image" src="assets/images/team-marcus.jpg" loading="lazy" decoding="async">
           <div class="team-card__gradient"></div>
         </div>
         <div class="team-card__body">
           <h3 class="heading-lg mb-sm">Marcus Thorne</h3>
-          <p class="label label--widest team-card__role">Lead Architect</p>
+          <p class="label label--widest team-card__role">Arquitecto Principal</p>
           <div class="flex gap-md">
             <a class="link-subtle" href="#" aria-label="GitHub">
               <img class="icon-logo" src="assets/logos/github.svg" alt="">
@@ -206,12 +204,12 @@
       </article>
       <article class="team-card copper-gradient-hover glow-copper-hover">
         <div class="team-card__image-wrap">
-          <img alt="Elena Vane - Head of Engineering" class="team-card__image" src="assets/images/team-elena.jpg" loading="lazy" decoding="async">
+          <img alt="Elena Vane — Directora de Engenharia" class="team-card__image" src="assets/images/team-elena.jpg" loading="lazy" decoding="async">
           <div class="team-card__gradient"></div>
         </div>
         <div class="team-card__body">
           <h3 class="heading-lg mb-sm">Elena Vane</h3>
-          <p class="label label--widest team-card__role">Head of Engineering</p>
+          <p class="label label--widest team-card__role">Directora de Engenharia</p>
           <div class="flex gap-md">
             <a class="link-subtle" href="#" aria-label="GitHub">
               <img class="icon-logo" src="assets/logos/github.svg" alt="">
@@ -271,16 +269,16 @@
           <span class="site-header__tagline">Studio</span>
         </span>
       </a>
-      <p class="text-md text-muted">© 2024 Pyre.<br>High-Performance Digital Engineering.</p>
+      <p class="text-md text-muted">© 2026 Pyre.<br>Engenharia Digital de Alta Performance.</p>
     </div>
     <div>
       <p class="site-footer__column-title">Navegação</p>
-      <a class="site-footer__link" href="index.html">Home</a>
+      <a class="site-footer__link" href="index.html">Início</a>
       <a class="site-footer__link" href="services.html">Serviços</a>
       <a class="site-footer__link" href="portfolio.html">Portfólio</a>
     </div>
     <div>
-      <p class="site-footer__column-title">Legal &amp; Empresa</p>
+      <p class="site-footer__column-title">Legal e Empresa</p>
       <a class="site-footer__link" href="aboutUs.html">Sobre</a>
       <a class="site-footer__link" href="contacts.html">Contacto</a>
       <a class="site-footer__link" href="#">Termos</a>

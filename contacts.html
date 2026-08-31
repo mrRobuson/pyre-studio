@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contactos - Pyre</title>
+  <title>Contacto | Pyre</title>
   <meta name="description" content="Contacte a Pyre Studio — vamos forjar o seu próximo projeto digital de alta performance. Email: geral@pyre.studio">
   <meta name="theme-color" content="#0A0A0C">
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
   <link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body class="page">
+<body class="page page--contacts">
 
 <header class="site-header glass">
   <div class="site-header__inner">
@@ -24,7 +24,7 @@
       </span>
     </a>
     <nav class="nav__links" aria-label="Navegação principal">
-      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="index.html">Início</a>
       <a class="nav__link" href="services.html">Serviços</a>
       <a class="nav__link" href="portfolio.html">Portfólio</a>
       <a class="nav__link" href="aboutUs.html">Sobre</a>
@@ -37,7 +37,7 @@
     </button>
   </div>
   <nav class="nav-mobile" id="site-nav" aria-label="Navegação móvel" hidden>
-    <a class="nav-mobile__link" href="index.html">Home</a>
+    <a class="nav-mobile__link" href="index.html">Início</a>
     <a class="nav-mobile__link" href="services.html">Serviços</a>
     <a class="nav-mobile__link" href="portfolio.html">Portfólio</a>
     <a class="nav-mobile__link" href="aboutUs.html">Sobre</a>
@@ -46,21 +46,21 @@
   </nav>
 </header>
 
-<main class="page__main relative overflow-hidden">
-  <div class="hero-glow hero-glow--center"></div>
+<main class="page__main relative">
+  <div class="hero-glow hero-glow--center" aria-hidden="true"></div>
 
   <div class="container z-10 relative">
     <section class="section section--center hero section--head">
       <h1 class="heading-display heading-display--primary max-w-narrow mx-auto mb-md">
-        Pronto para Acender a<br>Sua Presença Digital?
+        Pronto para Acender a<br>A Sua Presença Digital?
       </h1>
       <p class="text-lg text-muted max-w-prose mx-auto">
         Transformamos visões técnicas em realidade de alta performance. Vamos forjar o seu próximo projeto.
       </p>
     </section>
 
-    <section class="grid grid--2-lg grid--gap-xl">
-      <div class="stack-xl">
+    <section class="contact-layout">
+      <div class="contact-layout__info stack-xl">
         <div>
           <h2 class="heading-lg text-primary section-heading--lined">Canais de Ignição</h2>
           <div class="stack-xl">
@@ -79,7 +79,7 @@
               </div>
               <div>
                 <p class="label text-muted mb-sm">WhatsApp</p>
-                <p class="text-lg text-on-surface">+351 912 345 678</p>
+                <a class="text-lg text-on-surface" href="https://wa.me/351912345678">+351 912 345 678</a>
               </div>
             </div>
             <div class="contact-row">
@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <div class="flex gap-lg flex-wrap">
+        <div class="contact-socials flex gap-lg flex-wrap">
           <a class="social-link" href="https://pyre.studio" aria-label="Website" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/globe.svg" alt=""></a>
           <a class="social-link" href="https://www.instagram.com/pyre.studio" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/instagram.svg" alt=""></a>
           <a class="social-link" href="https://www.facebook.com/pyre.studio" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img class="icon-logo" src="assets/logos/facebook.svg" alt=""></a>
@@ -142,20 +142,22 @@
         </div>
       </div>
 
-      <div class="card card--graphite-static form-card card__padding-lg">
+      <div class="card card--graphite-static form-card card__padding-lg contact-layout__form">
         <div class="form-card__accent"></div>
         <form class="form z-10 relative" id="contact-form" novalidate>
           <div class="form__honeypot" aria-hidden="true">
-            <label for="company">Company</label>
+            <label for="company">Empresa</label>
             <input id="company" name="_honey" type="text" tabindex="-1" autocomplete="off">
           </div>
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form__group">
             <label class="form__label" for="name">Nome</label>
-            <input class="form__input" id="name" name="name" type="text" placeholder="Ex: John Doe" required>
+            <input class="form__input" id="name" name="name" type="text" placeholder="Ex: Ana Silva" required>
           </div>
           <div class="form__group">
             <label class="form__label" for="email">E-mail</label>
-            <input class="form__input" id="email" name="email" type="email" placeholder="john@company.com" required>
+            <input class="form__input" id="email" name="email" type="email" placeholder="ana@empresa.com" required>
           </div>
           <div class="form__group">
             <label class="form__label" for="project_type">Tipo de Projeto</label>
@@ -168,12 +170,13 @@
             </select>
           </div>
           <div class="form__group">
-            <label class="form__label" for="budget">Faixa de Orçamento Estimada</label>
-            <select class="form__select" id="budget" name="budget">
-              <option value="" disabled selected>Selecionar Orçamento</option>
-              <option value="1-3k">$1.000 - $3.000</option>
-              <option value="3-5k">$3.000 - $5.000</option>
-              <option value="enterprise">Personalizado / Enterprise</option>
+            <label class="form__label" for="plan">Plano Pyre</label>
+            <select class="form__select" id="plan" name="plan">
+              <option value="" disabled selected>Seleccionar Plano</option>
+              <option value="faisca">Plano Faísca — a partir de 150.000 AOA</option>
+              <option value="chama">Plano Chama — a partir de 300.000 AOA</option>
+              <option value="forja">Plano Forja — a partir de 700.000 AOA</option>
+              <option value="undecided">Ainda não sei — preciso de orientação</option>
             </select>
           </div>
           <div class="form__group">
@@ -198,9 +201,9 @@
           ></div>
           <button class="btn btn--primary btn--full mt-lg" type="submit">Enviar Mensagem</button>
         </form>
-        <p class="text-center mt-lg">
-          <a class="link-subtle" href="#">
-            Prefere agendar uma chamada direta? Escolha um horário na nossa agenda
+        <p class="text-center mt-lg contact-form__footnote">
+          <a class="link-subtle" href="https://wa.me/351912345678" target="_blank" rel="noopener noreferrer">
+            Prefere agendar uma chamada directa? Fale connosco no WhatsApp
             <img class="ui-icon icon-sm" src="assets/icons/ui/north_east.svg" alt="" aria-hidden="true" width="16" height="16">
           </a>
         </p>
@@ -219,16 +222,16 @@
           <span class="site-header__tagline">Studio</span>
         </span>
       </a>
-      <p class="text-md text-muted">© 2024 Pyre.<br>High-Performance Digital Engineering.</p>
+      <p class="text-md text-muted">© 2026 Pyre.<br>Engenharia Digital de Alta Performance.</p>
     </div>
     <div>
       <p class="site-footer__column-title">Navegação</p>
-      <a class="site-footer__link" href="index.html">Home</a>
+      <a class="site-footer__link" href="index.html">Início</a>
       <a class="site-footer__link" href="services.html">Serviços</a>
       <a class="site-footer__link" href="portfolio.html">Portfólio</a>
     </div>
     <div>
-      <p class="site-footer__column-title">Legal &amp; Empresa</p>
+      <p class="site-footer__column-title">Legal e Empresa</p>
       <a class="site-footer__link" href="aboutUs.html">Sobre</a>
       <a class="site-footer__link" href="contacts.html">Contacto</a>
       <a class="site-footer__link" href="#">Termos</a>
