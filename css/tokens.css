@@ -97,4 +97,10 @@
   --opacity-border-faint: 0.1;
   --opacity-muted: 0.6;
   --opacity-glass: 0.8;
+
+  /* --- Scrollbar --- */
+  --scrollbar-size: 10px;
+  --scrollbar-track: var(--color-bg-elevated);
+  --scrollbar-thumb: var(--color-copper);
+  --scrollbar-thumb-hover: var(--color-copper-bright);
 }
