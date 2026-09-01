@@ -1307,6 +1307,38 @@ blockquote.card {
   }
 }
 
+.modal-preview__hero {
+  border: 1px solid var(--color-border);
+}
+
+.modal-preview__image {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  object-fit: cover;
+  object-position: top;
+  background: var(--color-bg-surface-low);
+}
+
+.modal-preview__mobile {
+  max-width: 18rem;
+  margin-inline: auto;
+}
+
+.modal-preview__mobile-frame {
+  border: 1px solid var(--color-border-muted);
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background: linear-gradient(180deg, var(--color-bg-surface-high) 0%, var(--color-bg-elevated) 100%);
+  box-shadow: var(--shadow-copper-soft);
+}
+
+.modal-preview__image--mobile {
+  border-radius: 1.125rem;
+  min-height: 24rem;
+  max-height: 32rem;
+}
+
 /* --- Service plan cards (Arsenal Estratégico) --- */
 
 .service-plans {

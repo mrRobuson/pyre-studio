@@ -72,13 +72,15 @@
           data-project
           data-project-title="Nova Voz D'Angola"
           data-project-url="https://novavozdangola.ao/"
-          data-project-image="assets/images/portfolio-nova-voz.png"
+          data-project-image-desktop="assets/images/portfolio/nova-voz-desktop.jpg"
+          data-project-image-mobile="assets/images/portfolio/nova-voz-mobile.jpg"
+          data-project-image-fallback="assets/images/portfolio-ignition.jpg"
           data-project-challenge="Lançar a maior competição de talentos musicais de Angola exigia um portal capaz de receber inscrições de todo o país, com pagamento, upload de documentos e comunicação clara do calendário e prémios."
           data-project-solution="Desenvolvemos novavozdangola.ao — plataforma de candidatura online com formulário multi-etapas, taxa promocional de inscrição, regulamento integrado e fluxo de pagamento por transferência bancária para escalar a competição a nível nacional."
         >
           <div class="project-card__overlay"></div>
           <div class="project-card__image-wrap">
-            <img class="project-card__image" src="assets/images/portfolio-ignition.jpg" alt="Website Nova Voz D'Angola — competição de talentos musicais angolana" loading="lazy" decoding="async" width="800" height="600">
+            <img class="project-card__image" src="assets/images/portfolio/nova-voz-desktop.jpg" data-fallback="assets/images/portfolio-ignition.jpg" alt="Website Nova Voz D'Angola — competição de talentos musicais angolana" loading="lazy" decoding="async" width="800" height="600" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}">
             <div class="project-card__metric">
               <img class="metric-icon" src="assets/icons/bolt.svg" alt="" aria-hidden="true">
               Inscrições Online
@@ -105,13 +107,15 @@
           data-project
           data-project-title="Grupo LM Seres"
           data-project-url="https://lmseres.ao/"
-          data-project-image="assets/images/portfolio-ember.jpg"
+          data-project-image-desktop="assets/images/portfolio/lm-seres-desktop.jpg"
+          data-project-image-mobile="assets/images/portfolio/lm-seres-mobile.jpg"
+          data-project-image-fallback="assets/images/portfolio-ember.jpg"
           data-project-challenge="O Grupo LM Seres actua em segurança patrimonial, franchising gastronómico, eventos corporativos e consultoria — precisava de uma presença digital que transmitisse escala, confiança e diversidade de serviços num único hub."
           data-project-solution="Criámos lmseres.ao, site institucional que apresenta cada unidade de negócio, reforça mais de 8 anos de experiência no mercado angolano e centraliza o contacto comercial para parcerias e clientes corporativos."
         >
           <div class="project-card__overlay"></div>
           <div class="project-card__image-wrap project-card__image-wrap--tall">
-            <img class="project-card__image" src="assets/images/portfolio-ember.jpg" alt="Website institucional do Grupo LM Seres — soluções corporativas em Angola" loading="lazy" decoding="async" width="800" height="600">
+            <img class="project-card__image" src="assets/images/portfolio/lm-seres-desktop.jpg" data-fallback="assets/images/portfolio-ember.jpg" alt="Website institucional do Grupo LM Seres — soluções corporativas em Angola" loading="lazy" decoding="async" width="800" height="600" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}">
             <div class="project-card__metric">
               <img class="metric-icon" src="assets/icons/rocket.svg" alt="" aria-hidden="true">
               8+ Anos no Mercado
@@ -138,13 +142,15 @@
           data-project
           data-project-title="Vila do Amor"
           data-project-url="https://viladoamor.ao/"
-          data-project-image="assets/images/portfolio-forge.jpg"
+          data-project-image-desktop="assets/images/portfolio/vila-amor-desktop.jpg"
+          data-project-image-mobile="assets/images/portfolio/vila-amor-mobile.jpg"
+          data-project-image-fallback="assets/images/portfolio-forge.jpg"
           data-project-challenge="A Vila do Amor — feira romântica organizada pela Urus Eventos — precisava de um site que vendesse a experiência, explicasse as zonas do evento e convertesse visitantes em expositores, patrocinadores e compradores de ingressos."
           data-project-solution="Desenvolvemos viladoamor.ao com narrativa visual para casais e famílias, secções dedicadas a expositores e parceiros, e call-to-actions directos para aquisição de ingressos e participação no evento."
         >
           <div class="project-card__overlay"></div>
           <div class="project-card__image-wrap">
-            <img class="project-card__image" src="assets/images/portfolio-forge.jpg" alt="Website Vila do Amor — feira romântica e evento para casais em Luanda" loading="lazy" decoding="async" width="800" height="600">
+            <img class="project-card__image" src="assets/images/portfolio/vila-amor-desktop.jpg" data-fallback="assets/images/portfolio-forge.jpg" alt="Website Vila do Amor — feira romântica e evento para casais em Luanda" loading="lazy" decoding="async" width="800" height="600" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}">
             <div class="project-card__metric">
               <img class="metric-icon" src="assets/icons/target.svg" alt="" aria-hidden="true">
               Feira &amp; Experiências
@@ -223,8 +229,14 @@
     </button>
     <div class="modal__body">
       <h2 class="heading-display heading-display--primary glow-text mb-xl text-center" id="modal-title">Nova Voz D'Angola</h2>
-      <div class="card card--graphite-static overflow-hidden mb-xl">
-        <img class="w-full object-cover" id="modal-hero-image" alt="" src="assets/images/portfolio-nova-voz.png" loading="lazy" decoding="async">
+      <div class="card card--graphite-static overflow-hidden mb-lg modal-preview__hero">
+        <img class="w-full object-cover modal-preview__image" id="modal-hero-image" alt="" src="" loading="lazy" decoding="async">
+      </div>
+      <div class="modal-preview__mobile mb-xl" id="modal-mobile-wrap" hidden>
+        <p class="label text-muted text-center mb-md">Versão Mobile</p>
+        <div class="modal-preview__mobile-frame">
+          <img class="modal-preview__image modal-preview__image--mobile" id="modal-mobile-image" alt="" src="" loading="lazy" decoding="async">
+        </div>
       </div>
       <div class="grid grid--2 grid--gap-xl mb-xl">
         <div>

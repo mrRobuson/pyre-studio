@@ -4,6 +4,10 @@
   "scripts": {
     "build:css": "node scripts/build-css.js",
     "build": "npm run build:css",
-    "audit:css": "node scripts/audit-css.js"
+    "audit:css": "node scripts/audit-css.js",
+    "capture:portfolio": "node scripts/capture-portfolio-shots.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.1"
   }
 }
