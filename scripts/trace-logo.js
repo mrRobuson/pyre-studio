@@ -178,7 +178,7 @@ async function run() {
 
   var svg = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" fill="none" role="img" aria-label="Pyre Studio">`,
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" fill="none" role="img" aria-label="Pyre Studios">`,
     '  <defs>',
     `    <linearGradient id="pyre-flame" x1="${Math.round(width * 0.12)}" y1="${height}" x2="${Math.round(width * 0.92)}" y2="${Math.round(height * 0.04)}" gradientUnits="userSpaceOnUse">`,
     '      <stop stop-color="#7A4212"/>',

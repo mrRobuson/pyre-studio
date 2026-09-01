@@ -29,7 +29,7 @@ async function run() {
 
   var svg = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${boxWidth.toFixed(2)} ${boxHeight.toFixed(2)}" fill="none" role="img" aria-label="Pyre Studio">`,
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${boxWidth.toFixed(2)} ${boxHeight.toFixed(2)}" fill="none" role="img" aria-label="Pyre Studios">`,
     '  <defs>',
     '    <linearGradient id="pyre-flame" x1="0%" y1="100%" x2="100%" y2="0%">',
     '      <stop stop-color="#7A4212"/>',

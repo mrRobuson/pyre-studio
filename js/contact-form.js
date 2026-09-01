@@ -108,7 +108,7 @@
     var deadline = labelForSelect(formEl.deadline, DEADLINES, 'Não indicado');
     var formData = new FormData();
 
-    formData.append('_subject', '[Pyre Studio] ' + senderName + ' — ' + projectType);
+    formData.append('_subject', '[Pyre Studios] ' + senderName + ' — ' + projectType);
     formData.append('_replyto', senderEmail);
     formData.append('_template', 'table');
     formData.append('_captcha', 'false');

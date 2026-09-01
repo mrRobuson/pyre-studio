@@ -16,7 +16,7 @@ const headerBrand = `<a class="site-header__brand" href="index.html">
       <img alt="" class="site-header__logo" src="assets/images/logo-mark.png" width="36" height="36" aria-hidden="true">
       <span class="site-header__brand-text">
         <span class="site-header__name">Pyre</span>
-        <span class="site-header__tagline">Studio</span>
+        <span class="site-header__tagline">Studios</span>
       </span>
     </a>`;
 
@@ -24,7 +24,7 @@ const footerBrand = `<a class="site-footer__logo-link" href="index.html">
         <img alt="" class="site-footer__logo" src="assets/images/logo-mark.png" width="44" height="44" aria-hidden="true">
         <span class="site-footer__brand-text">
           <span class="site-header__name">Pyre</span>
-          <span class="site-header__tagline">Studio</span>
+          <span class="site-header__tagline">Studios</span>
         </span>
       </a>`;
 
@@ -32,7 +32,7 @@ const footerBrandCompact = `<a class="site-footer__logo-link" href="index.html">
       <img alt="" class="site-footer__logo" src="assets/images/logo-mark.png" width="44" height="44" aria-hidden="true">
       <span class="site-footer__brand-text">
         <span class="site-header__name">Pyre</span>
-        <span class="site-header__tagline">Studio</span>
+        <span class="site-header__tagline">Studios</span>
       </span>
     </a>`;
 
@@ -43,7 +43,7 @@ const replacements = [
   ],
   [
     `<a class="site-header__brand" href="index.html">
-      <img alt="Pyre Studio" class="site-header__logo site-header__logo--wordmark" src="assets/images/logo-full.png" width="148" height="56">
+      <img alt="Pyre Studios" class="site-header__logo site-header__logo--wordmark" src="assets/images/logo-full.png" width="148" height="56">
     </a>`,
     headerBrand,
   ],
@@ -56,7 +56,7 @@ const replacements = [
   ],
   [
     `<a class="site-footer__logo-link" href="index.html">
-        <img alt="Pyre Studio" class="site-footer__logo site-footer__logo--wordmark" src="assets/images/logo-full.png" width="168" height="64">
+        <img alt="Pyre Studios" class="site-footer__logo site-footer__logo--wordmark" src="assets/images/logo-full.png" width="168" height="64">
       </a>`,
     footerBrand,
   ],
@@ -69,7 +69,7 @@ const replacements = [
   ],
   [
     `<a class="site-footer__logo-link" href="index.html">
-      <img alt="Pyre Studio" class="site-footer__logo site-footer__logo--wordmark" src="assets/images/logo-full.png" width="168" height="64">
+      <img alt="Pyre Studios" class="site-footer__logo site-footer__logo--wordmark" src="assets/images/logo-full.png" width="168" height="64">
     </a>`,
     footerBrandCompact,
   ],
@@ -81,12 +81,12 @@ const replacements = [
     footerBrandCompact,
   ],
   [
-    `<img alt="Pyre Studio" class="hero-logo" src="assets/images/logo-full.png" width="320" height="120">`,
-    `<img alt="Pyre Studio" class="hero-logo" src="assets/images/logo-mark.png" width="144" height="144">`,
+    `<img alt="Pyre Studios" class="hero-logo" src="assets/images/logo-full.png" width="320" height="120">`,
+    `<img alt="Pyre Studios" class="hero-logo" src="assets/images/logo-mark.png" width="144" height="144">`,
   ],
   [
     `<img alt="A stylized, glowing metallic copper flame emblem against a pure obsidian black background, rendering in high fidelity 3D style, luxury tech aesthetic, stark contrast." class="hero-logo" src="assets/images/logo.svg">`,
-    `<img alt="Pyre Studio" class="hero-logo" src="assets/images/logo-mark.png" width="144" height="144">`,
+    `<img alt="Pyre Studios" class="hero-logo" src="assets/images/logo-mark.png" width="144" height="144">`,
   ],
 ];
 
