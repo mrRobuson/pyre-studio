@@ -1,5 +1,5 @@
 (function () {
-  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/hackerx22333@gmail.com';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/studios.pyre0@gmail.com';
 
   var PROJECT_TYPES = {
     web: 'Aplicação Web de Alta Performance',
