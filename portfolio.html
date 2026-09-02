@@ -145,9 +145,7 @@
         >
           <div class="project-card__overlay"></div>
           <div class="project-card__image-wrap project-card__image-wrap--video">
-            <video class="project-card__image project-card__video" poster="assets/images/portfolio/viladoamor/hero.png" muted loop playsinline autoplay preload="metadata" aria-label="Pré-visualização em vídeo do website Vila do Amor">
-              <source src="assets/images/portfolio/viladoamor/demo.mp4" type="video/mp4">
-            </video>
+            <video class="project-card__image project-card__video" poster="assets/images/portfolio/viladoamor/hero.png" muted loop playsinline preload="none" data-lazy-video="assets/images/portfolio/viladoamor/demo.mp4" aria-label="Pré-visualização em vídeo do website Vila do Amor"></video>
             <div class="project-card__metric">
               <img class="metric-icon" src="assets/icons/target.svg" alt="" aria-hidden="true">
               Feira &amp; Experiências
@@ -265,6 +263,7 @@
 
 <script src="js/portfolio-data.js" defer></script>
 <script src="js/nav.js" defer></script>
+<script src="js/lazy-media.js" defer></script>
 <script src="js/portfolio-filter.js" defer></script>
 <script src="js/modal.js" defer></script>
 </body>

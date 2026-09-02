@@ -1,0 +1,6 @@
+node_modules
+docs
+scripts/audit-site.cjs
+scripts/audit-site.mjs
+scripts/capture-portfolio-shots.mjs
+package-lock.json

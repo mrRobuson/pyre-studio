@@ -13,6 +13,26 @@
     return plans.querySelector('[data-service-video="' + id + '"]');
   }
 
+  function ensureVideoSource(video) {
+    if (!video || video.dataset.sourceLoaded === 'true') {
+      return;
+    }
+
+    var src = video.getAttribute('data-video-src');
+    if (!src) return;
+
+    var source = document.createElement('source');
+    source.src = src;
+    var type = video.getAttribute('data-video-type');
+    if (type) {
+      source.type = type;
+    }
+
+    video.appendChild(source);
+    video.load();
+    video.dataset.sourceLoaded = 'true';
+  }
+
   function canPlayVideo(video) {
     return video && !video.error && video.readyState >= HTMLMediaElement.HAVE_METADATA;
   }
@@ -28,7 +48,21 @@
   }
 
   function showVideo(video) {
-    if (!canPlayVideo(video)) return;
+    if (!video) return;
+
+    ensureVideoSource(video);
+
+    if (!canPlayVideo(video)) {
+      video.addEventListener(
+        'loadedmetadata',
+        function onMetadata() {
+          video.removeEventListener('loadedmetadata', onMetadata);
+          showVideo(video);
+        },
+        { once: true }
+      );
+      return;
+    }
 
     if (activeVideo && activeVideo !== video) {
       activeVideo.classList.remove('service-plans__video--active');
@@ -61,6 +95,14 @@
     card.addEventListener('mouseenter', function () {
       showVideo(getVideoForCard(card));
     });
+
+    card.addEventListener(
+      'focusin',
+      function () {
+        showVideo(getVideoForCard(card));
+      },
+      true
+    );
   });
 
   plans.addEventListener('mouseleave', function () {
