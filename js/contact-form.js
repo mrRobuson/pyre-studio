@@ -24,6 +24,8 @@
   var form = document.getElementById('contact-form');
   if (!form) return;
 
+  applyPlanFromQuery(form);
+
   var statusEl = document.getElementById('contact-form-status');
   var submitBtn = form.querySelector('[type="submit"]');
   var defaultLabel = submitBtn ? submitBtn.textContent.trim() : 'Enviar Mensagem';
@@ -150,6 +152,16 @@
     }
 
     return '';
+  }
+
+  function applyPlanFromQuery(formEl) {
+    var planSelect = formEl.plan;
+    if (!planSelect) return;
+
+    var planParam = new URLSearchParams(window.location.search).get('plano');
+    if (!planParam || !Object.prototype.hasOwnProperty.call(PLANS, planParam)) return;
+
+    planSelect.value = planParam;
   }
 
   function setStatus(type, message) {

@@ -1,7 +1,8 @@
 (function () {
   var carouselState = {
     index: 0,
-    items: []
+    items: [],
+    title: ''
   };
 
   function pauseCarouselVideos(container) {
@@ -57,6 +58,7 @@
     dots.innerHTML = '';
     carouselState.items = items;
     carouselState.index = 0;
+    carouselState.title = title;
 
     items.forEach(function (item, index) {
       track.appendChild(createSlide(item, title, index));
@@ -80,10 +82,10 @@
     if (dots) dots.hidden = !hasMany;
     if (counter) counter.hidden = !hasMany;
 
-    updateCarousel(title);
+    updateCarousel();
   }
 
-  function updateCarousel(title) {
+  function updateCarousel() {
     var track = document.getElementById('modal-carousel-track');
     var dots = document.querySelectorAll('[data-carousel-dot]');
     var counter = document.getElementById('modal-carousel-counter');
@@ -110,17 +112,17 @@
 
     if (counter) {
       counter.textContent =
-        carouselState.index + 1 + ' / ' + total + ' — ' + (title || 'Projecto');
+        carouselState.index + 1 + ' / ' + total + ' — ' + (carouselState.title || 'Projecto');
     }
   }
 
-  function goToSlide(index, title) {
+  function goToSlide(index) {
     carouselState.index = index;
-    updateCarousel(title);
+    updateCarousel();
   }
 
-  function shiftSlide(delta, title) {
-    goToSlide(carouselState.index + delta, title);
+  function shiftSlide(delta) {
+    goToSlide(carouselState.index + delta);
   }
 
   function parseMedia(card) {
@@ -171,7 +173,6 @@
     }
 
     renderCarousel(media, title);
-    card.setAttribute('data-carousel-title', title);
   }
 
   function openModal(id, card) {
@@ -204,25 +205,19 @@
 
     var prevBtn = event.target.closest('[data-carousel-prev]');
     if (prevBtn) {
-      var activeCard = document.querySelector('[data-project][data-carousel-title]');
-      var title = activeCard ? activeCard.getAttribute('data-carousel-title') : '';
-      shiftSlide(-1, title);
+      shiftSlide(-1);
       return;
     }
 
     var nextBtn = event.target.closest('[data-carousel-next]');
     if (nextBtn) {
-      var activeCardNext = document.querySelector('[data-project][data-carousel-title]');
-      var titleNext = activeCardNext ? activeCardNext.getAttribute('data-carousel-title') : '';
-      shiftSlide(1, titleNext);
+      shiftSlide(1);
       return;
     }
 
     var dot = event.target.closest('[data-carousel-dot]');
     if (dot) {
-      var activeCardDot = document.querySelector('[data-project][data-carousel-title]');
-      var titleDot = activeCardDot ? activeCardDot.getAttribute('data-carousel-title') : '';
-      goToSlide(Number(dot.getAttribute('data-carousel-dot')), titleDot);
+      goToSlide(Number(dot.getAttribute('data-carousel-dot')));
       return;
     }
 
@@ -250,15 +245,12 @@
       return;
     }
 
-    var activeCard = document.querySelector('[data-project][data-carousel-title]');
-    var title = activeCard ? activeCard.getAttribute('data-carousel-title') : '';
-
     if (event.key === 'ArrowLeft') {
-      shiftSlide(-1, title);
+      shiftSlide(-1);
     }
 
     if (event.key === 'ArrowRight') {
-      shiftSlide(1, title);
+      shiftSlide(1);
     }
   });
 })();
