@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Pyre Studios — Performance & GPU-friendly motion
+   ========================================================================== */
+
+.service-card,
+.project-card,
+.service-plans__video,
+.service-plans__poster,
+.project-card__video,
+.modal-carousel__slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.service-card,
+.project-card {
+  contain: layout paint;
+}
+
+.service-plans__video,
+.service-plans__poster {
+  will-change: opacity;
+}
+
+.service-plans:has(.service-card:hover) .service-card,
+.service-card:hover,
+.project-card:hover {
+  will-change: transform, opacity;
+}
+
+.service-plans--static-backdrop .service-plans__video {
+  display: none !important;
+}
+
+.service-plans__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  pointer-events: none;
+}
+
+.service-plans__poster:not([hidden]) {
+  opacity: 1;
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .glass,
+  .glass-nav,
+  .glass-panel,
+  .site-header.glass,
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(18, 18, 22, 0.96);
+  }
+
+  .site-header.glass,
+  .site-header {
+    background: rgba(19, 19, 21, 0.98);
+  }
+
+  .glass-panel {
+    background: rgba(18, 18, 22, 0.94);
+  }
+
+  .service-plans:has(.service-card:hover) .service-card:not(:hover) {
+    filter: none;
+    opacity: 0.72;
+  }
+
+  .service-card:hover,
+  .project-card:hover {
+    will-change: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .service-card,
+  .project-card,
+  .service-plans__video,
+  .service-card__media img,
+  .project-card__image {
+    transition-duration: 0.01ms !important;
+  }
+
+  .service-plans:has(.service-card:hover) .service-card:not(:hover) {
+    transform: none;
+  }
+
+  .service-plans:has(.service-card:hover) .service-card:hover {
+    transform: none;
+  }
+}

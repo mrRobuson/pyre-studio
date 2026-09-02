@@ -10,6 +10,7 @@ const files = [
   'typography.css',
   'layout.css',
   'components.css',
+  'performance.css',
   'utilities.css',
 ];
 

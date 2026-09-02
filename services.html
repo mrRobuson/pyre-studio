@@ -73,6 +73,7 @@
     </div>
     <div class="service-plans" data-service-plans>
       <div class="service-plans__backdrop" aria-hidden="true">
+        <img class="service-plans__poster" alt="" aria-hidden="true" width="1600" height="900" decoding="async" hidden>
         <video class="service-plans__video" data-service-video="faisca" data-video-src="assets/videos/faiscas.mp4" data-video-type="video/mp4" loop muted playsinline preload="none"></video>
         <video class="service-plans__video" data-service-video="chama" data-video-src="assets/videos/chama.webm" data-video-type="video/webm" loop muted playsinline preload="none"></video>
         <video class="service-plans__video" data-service-video="forja" data-video-src="assets/videos/forja.mp4" data-video-type="video/mp4" loop muted playsinline preload="none"></video>
@@ -83,7 +84,10 @@
       <article class="service-card" data-service-plan="faisca">
         <div class="service-card__content">
           <div class="service-card__media">
-            <img alt="Faíscas de cobre cinematográficas" src="assets/images/service-faisca.jpg" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/images/service-faisca.webp" type="image/webp">
+              <img alt="Faíscas de cobre cinematográficas" src="assets/images/service-faisca.jpg" loading="lazy" decoding="async" width="640" height="480">
+            </picture>
           </div>
           <img class="ui-icon service-card__icon" src="assets/icons/ui/bolt.svg" alt="" aria-hidden="true" width="36" height="36">
           <h3 class="heading-lg mb-sm">Plano Faísca</h3>
@@ -118,7 +122,10 @@
         <span class="service-card__badge">MAIS PROCURADO</span>
         <div class="service-card__content">
           <div class="service-card__media">
-            <img alt="Chama minimalista de isqueiro metálico" src="assets/images/service-chama.jpg" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/images/service-chama.webp" type="image/webp">
+              <img alt="Chama minimalista de isqueiro metálico" src="assets/images/service-chama.jpg" loading="lazy" decoding="async" width="640" height="480">
+            </picture>
           </div>
           <div class="service-card__header--offset">
             <img class="ui-icon service-card__icon" src="assets/icons/ui/local_fire_department.svg" alt="" aria-hidden="true" width="36" height="36">
@@ -154,7 +161,10 @@
       <article class="service-card" data-service-plan="forja">
         <div class="service-card__content">
           <div class="service-card__media">
-            <img alt="Interior de forja com metal fundido" src="assets/images/service-forja.jpg" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="assets/images/service-forja.webp" type="image/webp">
+              <img alt="Interior de forja com metal fundido" src="assets/images/service-forja.jpg" loading="lazy" decoding="async" width="640" height="480">
+            </picture>
           </div>
           <img class="ui-icon service-card__icon" src="assets/icons/ui/diamond.svg" alt="" aria-hidden="true" width="36" height="36">
           <h3 class="heading-lg mb-sm">Plano Forja</h3>
@@ -300,6 +310,7 @@
   </div>
 </footer>
 
+<script src="js/media-capabilities.js"></script>
 <script src="js/nav.js" defer></script>
 <script src="js/services-video.js" defer></script>
 </body>

@@ -31,16 +31,24 @@
     }
   }
 
-  filterBar.addEventListener('click', function (event) {
-    var button = event.target.closest('[data-filter]');
-    if (!button || !filterBar.contains(button)) return;
+  function bindFilterEvents() {
+    filterBar.addEventListener('click', function (event) {
+      var button = event.target.closest('[data-filter]');
+      if (!button || !filterBar.contains(button)) return;
 
-    var filter = button.getAttribute('data-filter');
-    if (!filter) return;
+      var filter = button.getAttribute('data-filter');
+      if (!filter) return;
 
-    setActiveButton(button);
-    applyFilter(filter);
-  });
+      setActiveButton(button);
+      applyFilter(filter);
+    });
 
-  applyFilter('all');
+    applyFilter('all');
+  }
+
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(bindFilterEvents, { timeout: 1500 });
+  } else {
+    bindFilterEvents();
+  }
 })();
